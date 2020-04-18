@@ -1,0 +1,37 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 70px;
+    --total-height: 900px;
+}
+
+
+header {
+    background-color: blueviolet;
+    height: var(--header-height);
+}
+
+section {
+    background-color: cyan;
+    width: 60%;
+}
+
+aside, section{
+    display: inline-block;
+    height: calc(var(--total-height) - var(--header-height));
+}
+
+#aside-left{
+    background-color: cadetblue;
+    width: 20%;
+    float: left;
+}
+#aside-right{
+    background-color: cadetblue;
+    width: 20%;
+    float: right;
+}
+
